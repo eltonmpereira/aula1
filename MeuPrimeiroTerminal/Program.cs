@@ -7,28 +7,66 @@ namespace MeuPrimeiroTerminal
                static void Main(string[] args)
         {
             
-            string txt = "Digite sua idade: ";
+            //string txt = "Digite sua idade: ";
+            //int idade = 0;
+            //Console.WriteLine (txt);
+            //string idadeEmString = Console.ReadLine();
+            //idade = Convert.ToInt32(idadeEmString);
+            /*
+
+            int[] meuArray = new int [5];
+            meuArray[0] = 0;
+            meuArray[1] = 0;
+            meuArray[2] = 0;
+            meuArray[3] = 0;
+            meuArray[4] = 0;
+
+            for (int i = 0;i <=4;i++)
+            {
+               meuArray[i] = 10 + i;                
+            }
+
+            for (int i = 0; i<meuArray.Length; i++)
+            {
+                Console.WriteLine(meuArray[i]);            
+            }
+
+            Console.WriteLine ("------------------------------");
+
+            foreach(int variavelIntDoArray in meuArray)
+            {
+                Console.WriteLine(variavelIntDoArray);
+
+            }
+             */
+           
+           
+           /* Console.WriteLine ("Digite sua idade: ");
             int idade = 0;
-
-            Console.WriteLine (txt);
-
             string idadeEmString = Console.ReadLine();
             idade = Convert.ToInt32(idadeEmString);
 
-                    
-            if(idade >= 30) {
-                Console.WriteLine($"VC ta velho");
+            for (int i=0; i <= idade;i++)
+            {
+                Console.WriteLine (i);
+            }
            
-            }
-            else if (idade >=10 && idade <=15){
-                Console.WriteLine ($"Voce é adolescente!!");
 
-            }
-            else if (idade <= 10){
-                Console.WriteLine ($"vc é muito novo!");
-            }
+            Console.WriteLine ("Quantos números irá digitar?");
+            string numeroEmString = Console.ReadLine();
+            int numeros = Convert.ToInt32(numeroEmString);
 
-            Console.WriteLine($"VC Digitou: {idadeEmString}");
+            int resultado = 1;
+            for (int i = 0; i<numeros; i++)
+            {
+                Console.WriteLine ("Escreva seu numero: ");
+                string numerosEmString = Console.ReadLine();
+                int numero = Convert.ToInt32(numerosEmString);
+                resultado *= numero;
+            }
+            Console.WriteLine($"O resultado é: {resultado}");
+              */
+
         }
     }
 
