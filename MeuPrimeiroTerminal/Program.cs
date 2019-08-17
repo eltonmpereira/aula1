@@ -6,67 +6,39 @@ namespace MeuPrimeiroTerminal
     {
                static void Main(string[] args)
         {
+            Console.WriteLine ("Qual time ganhou a ultima Copa?");
+            string[] times = new string[4];
+            times [0] = "Brasil";
+            times [1] = "Franca";
+            times [2] = "México";
+            times [3] = "Alemanha";
+            for(int i = 0; i<4;i++)
+            {
+                Console.WriteLine (times[i]);
+            }
+
+            Console.WriteLine ("Resposta: ");
             
-            //string txt = "Digite sua idade: ";
-            //int idade = 0;
-            //Console.WriteLine (txt);
-            //string idadeEmString = Console.ReadLine();
-            //idade = Convert.ToInt32(idadeEmString);
-            /*
+            String opcaoDoUsuario = Console.ReadLine();
+            bool ehVencedor = EhVencedor(opcaoDoUsuario);
 
-            int[] meuArray = new int [5];
-            meuArray[0] = 0;
-            meuArray[1] = 0;
-            meuArray[2] = 0;
-            meuArray[3] = 0;
-            meuArray[4] = 0;
+            if(ehVencedor)
+                Console.WriteLine ("Venceu");
+            else
+                Console.WriteLine ("Perdeu");            
+        }
 
-            for (int i = 0;i <=4;i++)
-            {
-               meuArray[i] = 10 + i;                
-            }
+        public static bool EhVencedor(string opcaoDoUsuario)
+        {
+            string vencedor = "Franca";
+            // if(opcaoDoUsuario == vencedor)
+            //{
+            //    return true;
+            //}
 
-            for (int i = 0; i<meuArray.Length; i++)
-            {
-                Console.WriteLine(meuArray[i]);            
-            }
+            //return false;
 
-            Console.WriteLine ("------------------------------");
-
-            foreach(int variavelIntDoArray in meuArray)
-            {
-                Console.WriteLine(variavelIntDoArray);
-
-            }
-             */
-           
-           
-           /* Console.WriteLine ("Digite sua idade: ");
-            int idade = 0;
-            string idadeEmString = Console.ReadLine();
-            idade = Convert.ToInt32(idadeEmString);
-
-            for (int i=0; i <= idade;i++)
-            {
-                Console.WriteLine (i);
-            }
-           
-
-            Console.WriteLine ("Quantos números irá digitar?");
-            string numeroEmString = Console.ReadLine();
-            int numeros = Convert.ToInt32(numeroEmString);
-
-            int resultado = 1;
-            for (int i = 0; i<numeros; i++)
-            {
-                Console.WriteLine ("Escreva seu numero: ");
-                string numerosEmString = Console.ReadLine();
-                int numero = Convert.ToInt32(numerosEmString);
-                resultado *= numero;
-            }
-            Console.WriteLine($"O resultado é: {resultado}");
-              */
-
+            return opcaoDoUsuario == vencedor;
         }
     }
 
