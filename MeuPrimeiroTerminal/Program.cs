@@ -5,42 +5,28 @@ namespace MeuPrimeiroTerminal
     class Program
     {
         static void Main(string[] args)
-        {   float imc, peso, altura;
-            Console.WriteLine("Digite o Seu peso: ");
-            peso = float.Parse (Console.ReadLine());
-            
-            
-            Console.WriteLine("Digite sua altura: ");
-            altura = float.Parse (Console.ReadLine());
+        {int idade = 0;
 
-            imc = (peso /(altura * altura));
+        Console.Write ("Digite sua idade: ");
+        string idadeEmString = Console.ReadLine();
+        idade = Convert.ToInt32 (idadeEmString);
 
-            Console.WriteLine("Seu IMC é:" + imc);
-
-            if (imc<18.5)
-            {
-                Console.Write ("Peso Abaixo do Normal");
-            }
-            else if (imc >18.5 && imc < 25)
-            {
-                Console.WriteLine ("Peso Normal");
-            }
-            else if (imc > 25 && imc <30)
-            {
-                Console.WriteLine ("Sobrepeso.");
-            }
-            else if (imc >30 && imc <35)
-            {
-                Console.WriteLine ("Obesidade Grau 1");
-            }
-            else if (imc>35 && imc<40)
-            {
-                Console.WriteLine("Obesidade Grau 2");
-            }
-            else if (imc>40)
-            {
-                Console.WriteLine("Obesidade Grau 3");
-            }
+        if (idade >= 13 && idade < 19)
+        {
+            Console.WriteLine ("Voce eh adolescente");
+        }
+        else if (idade >= 19 && idade <= 60)
+        {
+            Console.WriteLine ("Voce eh Adulto");
+        }
+        else if (idade > 60)
+        {
+            Console.WriteLine ("Voce eh idoso");
+        }
+        else
+        {
+            Console.WriteLine ("Voce eh crianca");
+        }
         }
     }
 
